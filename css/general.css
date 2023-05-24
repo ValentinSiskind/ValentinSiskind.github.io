@@ -1,0 +1,240 @@
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+	min-height: 100%;
+	width: 100%;
+	font-size: 125%;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100%;
+	width: 100%;
+	margin: 0rem 0rem;
+	font-family: 'Nunito', sans-serif;
+	background-color: #FFFFF0;
+}
+
+.wrapperdiv {
+	display: flex;
+	flex-direction: row;
+}
+
+.verticalnav {
+	min-height: 100%;
+	width: 15rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+	position: fixed;
+	background-color: #6B6D76;
+}
+
+main {
+	min-height: 100%;
+	width: 100%;
+	margin-left: 15rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.block {
+	height: 100vh;
+	padding: 2rem;
+	display: grid;
+	grid-template: 0.2fr 1fr 1fr / 1fr 1fr;
+	border-bottom: 1px outset #6B6D76;
+}
+
+.gap {
+	gap: 1rem;
+}
+
+.projectblock {
+	height: 100vh;
+	padding: 2rem;
+	display: grid;
+	grid-template: 0.2fr 1fr / 1fr 1fr;
+	border-bottom: 1px outset #6B6D76;
+}
+
+.top {
+	grid-row: 2 / 3;
+}
+
+.bottom {
+	grid-row: 3 / 4;
+}
+
+.left {
+	grid-column: 1 / 2;
+}
+
+.right {
+	grid-column: 2 / 3;
+}
+
+.link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	padding: 1rem 1rem;
+	margin: 3rem 2rem;
+	background-color: #FFFFF0;
+	color: #6B6D76;
+	transition: 0.2s;
+}
+
+.titlebox {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	max-width: 50rem;
+	background-color: rgba(255, 255, 240, 0.8);
+	color: #6B6D76;
+	border-radius: 20px;
+	padding-bottom: 1rem;
+	padding-right: 2rem;
+	margin: 2rem;
+}
+
+.titletextbox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.textbox {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 1rem 2rem;
+	background-color: #FFFFF0;
+	color: #6B6D76;
+}
+
+.projectalign {
+	align-items: center;
+	text-align: center;
+}
+
+.imagebox {
+	margin: 1rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.photoshadow {
+	filter: drop-shadow(7px 8px 4px #656565)
+}
+
+video {
+	margin: 1rem;
+}
+
+.hero {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-image: url(/images/crls.jpg);
+	background-size: cover;
+}
+
+.orangeshadow:hover {
+	box-shadow: 6px 4px 0px 3px rgba(255,124,10,1);
+	transform: translate(-1px, -1px);
+	transition: 0.2s;
+}
+
+lord-icon {
+	width: 4rem;
+	height: 4rem;
+}
+
+.icons img, i {
+	vertical-align: middle;
+	width: 1.333rem;
+}
+
+.smallheader {
+	font-size: 2.5rem;
+}
+
+.sectionheader {
+	display: flex;
+	align-items: center;
+	margin: 1rem;
+	margin-left: 2rem;
+	grid-column: 1 / 3;
+}
+
+h1 {
+	font-size: 3.157rem;
+	line-height: 1.5396;
+	text-align: center;
+	color: #000000;
+}
+
+h2 {
+	font-size: 2.369rem;
+	line-height: 1.5744;
+	text-align: center;
+	margin: 0rem;
+}
+
+h3 {
+	font-size: 1.777rem;
+	line-height: 1.6111;
+	text-align: center;
+}
+
+h4 {
+	font-size: 1.333rem;
+	line-height: 1.6667;
+	text-align: center;
+	margin: 0;
+}
+
+p, blockquote, li {
+	font-size: 1rem;
+	line-height: 1.75;
+}
+
+.titlebox p {
+	text-align: center;
+}
+
+a:link {
+	color: #6B6D76;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #6B6D76;
+	text-decoration: none;
+}
+
+nav ul {
+	list-style-type: none;
+	padding-left: 0rem;
+}
+
+ul {
+	margin-top: 0;
+}
+
+#skills li {
+	font-size: 1.333rem;
+}
+
