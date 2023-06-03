@@ -1,11 +1,10 @@
-
 *, *:before, *:after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 html {
 	min-height: 100%;
-	width: 100%;
+	min-width: 100%;
 	font-size: 125%;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
@@ -13,7 +12,7 @@ html {
 
 body {
 	min-height: 100%;
-	width: 100%;
+	min-width: 100%;
 	margin: 0rem 0rem;
 	font-family: 'Nunito', sans-serif;
 	background-color: #FFFFF0;
@@ -34,10 +33,32 @@ body {
 	list-style-type: none;
 	position: fixed;
 	background-color: #6B6D76;
+	transition: transform .2s ease;
+}
+
+.mobilenav {
+	height: 3rem;
+	width: 100%;
+	padding-right: 0.75rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	position: fixed;
+	background-color: #6B6D76;
+	z-index: 1;
+	transform: translateY(-150%);
+	transition: transform .2s ease;
+}
+
+button {
+	border: none;
+    background: none;
+	height: 1.5rem;
 }
 
 main {
-	min-height: 100%;
+	height: 100%;
 	width: 100%;
 	margin-left: 15rem;
 	display: flex;
@@ -111,6 +132,10 @@ main {
 	justify-content: center;
 }
 
+.titleboxmobile {
+	display: none;
+}
+
 .textbox {
 	display: flex;
 	flex-direction: column;
@@ -134,7 +159,7 @@ main {
 }
 
 .photoshadow {
-	filter: drop-shadow(7px 8px 4px #656565)
+	filter: drop-shadow(7px 8px 4px #656565);
 }
 
 video {
@@ -146,13 +171,13 @@ video {
 	justify-content: flex-start;
 	align-items: center;
 	height: 100vh;
-	width: 100%;
+	min-width: 100%;
 	background-image: url(/images/crls.jpg);
 	background-size: cover;
 }
 
 .orangeshadow:hover {
-	box-shadow: 6px 4px 0px 3px rgba(255,124,10,1);
+	box-shadow: 6px 4px 0px 3px rgba(255, 124, 10, 1);
 	transform: translate(-1px, -1px);
 	transition: 0.2s;
 }
@@ -167,8 +192,8 @@ lord-icon {
 	width: 1.333rem;
 }
 
-.smallheader {
-	font-size: 2.5rem;
+.mobilenav i {
+	color: #FFFFF0;
 }
 
 .sectionheader {
@@ -184,6 +209,7 @@ h1 {
 	line-height: 1.5396;
 	text-align: center;
 	color: #000000;
+	margin: 1rem 0rem;
 }
 
 h2 {
@@ -194,12 +220,6 @@ h2 {
 }
 
 h3 {
-	font-size: 1.777rem;
-	line-height: 1.6111;
-	text-align: center;
-}
-
-h4 {
 	font-size: 1.333rem;
 	line-height: 1.6667;
 	text-align: center;
@@ -211,7 +231,7 @@ p, blockquote, li {
 	line-height: 1.75;
 }
 
-.titlebox p {
+.titletextbox p {
 	text-align: center;
 }
 
@@ -238,3 +258,159 @@ ul {
 	font-size: 1.333rem;
 }
 
+@media (max-width: 36rem) {
+
+	html {
+		font-size: 100%;
+		scroll-padding-top: 3rem;
+	}
+
+	main {
+		margin-left: 0rem;
+		margin-top: 3rem;
+	}
+	.verticalnav {
+		transform: translateX(-150%);
+		transition: transform .2s ease;
+		z-index: 1;
+	}
+
+	.opennav .verticalnav{
+		transform: translateX(0%);
+		transition: transform .2s ease;
+	}
+
+	.changeicons .fa-bars {
+		display: none !important;
+		position: absolute;
+	} 
+	
+	.changeicons .fa-xmark {
+		display: block !important;
+	}
+
+	.mobilenav {
+		transform: translateY(0%);
+		transition: transform .2s ease;
+	}
+
+	.hero {
+		background-size: cover;
+		background-repeat: no-repeat;
+		align-items: flex-start;
+		height: 60%;
+	}
+
+	.titlebox {
+		display: none;
+	}
+
+	.titleboxmobile {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-width: 30rem;
+		background-color: rgba(255, 255, 240, 0.8);
+		color: #6B6D76;
+		border-radius: 20px;
+		padding: 1rem 1rem;
+		margin: 2rem;
+	}
+
+	.titletextbox {
+		flex-direction: row;
+	}
+
+	.imageaspect {
+		aspect-ratio: 509 / 490;
+		width: 50%;
+	}
+
+	iframe {
+		width: 400px;
+		height: 226px;
+		margin-bottom: 1rem;
+	}
+
+	.sectionheader {
+		margin: 0.5rem;
+		margin-left: 1rem;
+	}
+
+	lord-icon {
+		width: 3rem;
+		height: 3rem;
+	}
+
+	.block {
+		display: flex;
+		flex-direction: column;
+		padding: 0.5rem;
+		height: 100%; 
+	}
+
+	.projectblock {
+		display: flex;
+		flex-direction: column;
+		padding: 0.5rem;
+		height: 100%;
+	}
+
+	.textbox {
+		margin: 0rem;
+		margin-left: 1.5rem;
+		margin-right: 1rem;
+		margin-top: 1rem;
+	}
+
+	.projectalign {
+		margin: 0rem 1.5rem;
+		margin-bottom: 0.5rem;
+		
+	}
+
+	#skills h3 {
+		font-size: 1.2rem;
+	}
+
+	.imagebox {
+		display: none;
+	}
+
+	.icons i {
+		padding-left: 0.1rem;
+		vertical-align: middle;
+		font-size: 125%;
+	}
+
+	h1 {
+		font-size: clamp(2.369rem, 2.0312857142857146rem + 0.9380952380952379vw, 3.157rem);
+		padding-top: 1.5rem;
+	}
+
+	h2 {
+		font-size: clamp(1.563rem, 1.2175714285714285rem + 0.9595238095238098vw, 2.369rem);
+	}
+
+	h3 {
+		font-size: clamp(1.25rem, 1.0241428571428572rem + 0.6273809523809523vw, 1.777rem);
+	}
+
+	p, blockquote, li, #skills li {
+	font-size: 1rem;
+	line-height: 1.625rem;
+	}
+
+	.titletextbox p {
+		font-size: 125%;
+	}
+	
+	.fa-bars {
+		display: block;
+	}
+
+	.fa-xmark {
+		display: none !important;
+	}
+
+}
