@@ -70,7 +70,7 @@ main {
 	padding: 2rem;
 	display: grid;
 	grid-template: 0.2fr 1fr 1fr / 1fr 1fr;
-	border-bottom: 1px outset #6B6D76;
+	border-bottom: 1px solid rgba(107, 109, 118, 0.3);
 }
 
 .gap {
@@ -82,7 +82,24 @@ main {
 	padding: 2rem;
 	display: grid;
 	grid-template: 0.2fr 1fr / 1fr 1fr;
-	border-bottom: 1px outset #6B6D76;
+	border-bottom: 1px solid rgba(107, 109, 118, 0.3);
+}
+
+.contactblock {
+	height: 50vh;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.contactdiv {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.contactbuttondiv {
+	width: 12rem;
 }
 
 .top {
@@ -111,6 +128,47 @@ main {
 	background-color: #FFFFF0;
 	color: #6B6D76;
 	transition: 0.2s;
+}
+
+.contactlink {
+	background-color: #6B6D76;
+	color: #FFFFF0;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	height: 4rem;
+	width: auto;
+	max-width: 3.4rem;
+	margin: 4rem 2rem;
+	transition: all 0.2s, max-width 0.2s;
+}
+
+.contactlink:hover {
+	max-width: 7.5rem;
+}
+
+#email:hover {
+	max-width: 7rem;
+}
+
+.contacticon {
+  	padding: 0rem 1rem;
+  	display: flex;
+  	align-items: center;
+	color: #FFFFF0;
+}
+
+#email .contacticon {
+	padding: 0rem 0.85rem;
+	padding-top: 0.2rem;
+	margin-right: 0.5rem;
+}
+
+.contacttext {
+	color: #FFFFF0;
+	white-space: nowrap;
+  	padding-right: 1rem;
 }
 
 .titlebox {
@@ -397,8 +455,8 @@ ul {
 	}
 
 	p, blockquote, li, #skills li {
-	font-size: 1rem;
-	line-height: 1.625rem;
+		font-size: 1rem;
+		line-height: 1.625rem;
 	}
 
 	.titletextbox p {
