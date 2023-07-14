@@ -461,16 +461,24 @@ ul {
 	}
 
 	h2 {
-		font-size: 3.157rem
+		font-size: 3.157rem;
 	}
+
+	/* #skills h3 {
+		font-size: 1.777rem;
+	} */
 
 	.titletextbox p {
 		font-size: 125%;
 	}
 
-	p, blockquote, li, #skills li {
+	p, blockquote, li {
 		font-size: 1rem;
 		line-height: 1.625rem;
+	}
+
+	#skills li {
+		font-size: 1.25rem;
 	}
 }
 
