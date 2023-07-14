@@ -5,15 +5,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Valentin Siskind</title>
-	<link href="css/general.css" rel="stylesheet" type="text/css">
+	<link href="general.css" rel="stylesheet" type="text/css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-	<link rel="manifest" href="favicon/site.webmanifest">
-	<script defer src="script.js"></script>
 	<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 	<link rel="stylesheet" data-purpose="Layout StyleSheet" title="Default" disabled
 		href="/css/app-937c1ff7d52fd6f78dd9322599e2b5d4.css?vsn=d">
@@ -23,6 +21,7 @@
 	<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css">
 	<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css">
 	<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css">
+	<script defer src="script.js"></script>
 </head>
 
 <body id="top">
@@ -39,8 +38,8 @@
 		</nav>
 
 		<nav class="mobilenav">
-			<button type="button" onclick="navIconButton()"> <i class="fa-solid fa-bars fa-2xl"> </i> <i
-					class="fa-solid fa-xmark fa-2xl"> </i> </button>
+			<button type="button" class="navbutton" onclick="navIconButton()"> <i class="fa-solid fa-bars fa-2xl"> </i>
+				<i class="fa-solid fa-xmark fa-2xl"> </i> </button>
 		</nav>
 
 		<main>
@@ -68,43 +67,46 @@
 				</div>
 			</div>
 
-			<section class="block" id="education">
+			<section class="projectblock" id="education">
 
 				<div class="sectionheader">
 					<h2>Education</h2>
 					<lord-icon src="https://cdn.lordicon.com/wxnxiano.json" trigger="morph"
 						colors="primary:#FF7C0A,secondary:#000000" style="margin: 0.4rem"></lord-icon>
 				</div>
-				<div class="textbox top left">
-					<h3>Achivements and Awards:</h3>
-					<ul>
-						<li>Unweighted GPA: 96.61/100</li>
-						<li>Member of the National Honors Society</li>
-						<li>Received the Seal of Biliteracy with Distinction for Spanish</li>
-						<li>Received score of 5 on the AP Computer Science Principles exam</li>
-						<li>Received a score of 5 in the AP Spanish Language and Culture exam</li>
-						<li>President of Jewish Heritage Club</li>
-					</ul>
+
+				<div class="verticalbox">
+					<div class="textbox">
+						<h3>Achivements and Awards:</h3>
+						<ul>
+							<li>Unweighted GPA: 96.61/100</li>
+							<li>Member of the National Honors Society</li>
+							<li>Received the Seal of Biliteracy with Distinction for Spanish</li>
+							<li>Received score of 5 on the AP Computer Science Principles exam</li>
+							<li>Received a score of 5 in the AP Spanish Language and Culture exam</li>
+							<li>President of Jewish Heritage Club</li>
+						</ul>
+					</div>
+
+					<div class="textbox">
+						<h3>Classes Taken:</h3>
+						<ul>
+							<li>AP Calculus BC (2022-2023; final grade: A)</li>
+							<li>Web Design (2022-2023; final grade: A+)</li>
+							<li>AP Computer Science A (2022-2023; final grade: A)</li>
+							<li>AP Computer Science Principles (2021-2022; final grade: A+)</li>
+							<li>Hands On Programming with Arduinos (2020-2021; final grade: A+)</li>
+						</ul>
+					</div>
 				</div>
 
-				<div class="imagebox top right">
-					<img src="images/crls-logo.png">
+				<div class="verticalbox">
+					<div class="imagebox top right">
+						<img src="images/crls-logo.png">
+					</div>
 				</div>
 
-				<div class="imagebox bottom left">
-					<img src="/images/nhs.jpg" height="350px">
-				</div>
 
-				<div class="textbox bottom right">
-					<h3>Classes Taken:</h3>
-					<ul>
-						<li>AP Calculus BC (2022-2023; final grade: A)</li>
-						<li>Web Design (2022-2023; final grade: A+)</li>
-						<li>AP Computer Science A (2022-2023; final grade: A)</li>
-						<li>AP Computer Science Principles (2021-2022; final grade: A+)</li>
-						<li>Hands On Programming with Arduinos (2020-2021; final grade: A+)</li>
-					</ul>
-				</div>
 			</section>
 
 			<section class="projectblock" id="skills">
@@ -121,10 +123,10 @@
 						<li><i class="fa-brands fa-html5"></i> HTML: Competent</li>
 						<li><i class="fa-brands fa-css3-alt"></i> CSS: Competent</li>
 						<li><i class="fa-brands fa-square-js"></i> JavaScript: Beginner</li>
-						<li><img src="images/arduino.png" width="27px"> Arduino C++: Beginner</li>
-						<li><img src="images/google-docs.png" width="27px"> Google Docs: Experienced</i></li>
-						<li><img src="images/google-slides.png" width="27px"> Google Slides: Experienced</li>
-						<li><img src="images/google-sheets.png" width="27px"> Google Sheets: Competent</li>
+						<li><img src="images/arduino.png" width="27"> Arduino C++: Beginner</li>
+						<li><img src="images/google-docs.png" width="27"> Google Docs: Experienced</li>
+						<li><img src="images/google-slides.png" width="27"> Google Slides: Experienced</li>
+						<li><img src="images/google-sheets.png" width="27"> Google Sheets: Competent</li>
 					</ul>
 				</div>
 
@@ -146,62 +148,238 @@
 						colors="primary:#00000,secondary:#FF7C0A" style="margin: 0.5rem"></lord-icon>
 				</div>
 				<div class="textbox top left">
+					<h3>Audible Future Leaders Internship</h3>
+					<p>(July 2023 - June 2024) Year-long, paid internship at Audible where interns gain meaningful work
+						experience, master professional skills, build professional and social capital, and potentially
+						secure an offer to return to Audible.</p>
+				</div>
+
+				<div id="audible" class="imagebox bottom left">
+					<img src="images/Audible_logo.png" width="500">
+				</div>
+
+				<div class="textbox top right">
 					<h3>Technician at SubZero Creamery:</h3>
-					<p>(August 2022-July 2023) Produced high-quality ice cream using liquid nitrogen and provided
+					<p>(August 2022 - July 2023) Produced high-quality ice cream using liquid nitrogen and provided
 						exceptional customer service to ensure customer satisfaction. Requires food and equipment safety
 						training, and knowledge of the science behind making ice cream using the nitrogen.</p>
 				</div>
 
-				<div class="imagebox bottom left">
-					<img src="images/kickstart.JPG" width="500px">
-				</div>
-
-				<div class="imagebox top right">
-					<img src="images/subzero.png">
-				</div>
-
 				<div class="textbox bottom right">
 					<h3>Kickstart Coach:</h3>
-					<p>(October 2021-June 2023) Cambridge Youth Soccer program on Sunday mornings at Gore Park. Coaches
+					<p>(October 2021 - June 2023) Cambridge Youth Soccer program on Sunday mornings at Gore Park.
+						Coaches
 						teach young kids (4-6 years old) how to play soccer, share, play as a team, and be kind to
 						others. Coaches help the kids and also manage parents at the same time, making sure the kids can
 						learn without their help.</p>
 				</div>
 			</section>
 
-			<section class="block gap" id="projects">
+			<section class="carouselblock" id="projects">
 				<div class="sectionheader">
 					<h2>Projects</h2>
 					<lord-icon src="https://cdn.lordicon.com/igrslveu.json" trigger="hover"
 						colors="primary:#00000,secondary:#FF7C0A" style="margin: 0.2rem"></lord-icon>
 				</div>
-				<div class="textbox top left">
-					<h3>Connect-4:</h3>
-					<p>A two player version of the classic game Connect-4, coded in Python. I submitted this project for
-						the Create Task of the 2022 AP Computer Science Principles Exam. <strong><a
-								href="html/projects.html#connect-4">Click here to view this project ></a></strong></p>
-				</div>
 
-				<div class="textbox top right">
-					<h3>Hangman:</h3>
-					<p>A text based version of the classic game Hangman, coded in Python. I submitted this project as
-						extra credit for my AP Computer Science Principles class in 2022. <strong><a
-								href="html/projects.html#hangman">Click here to view this project ></a></strong></p>
-				</div>
+				<div class="carouselsection">
 
-				<div class="textbox bottom left">
-					<h3>World Cup 1978 Short Film:</h3>
-					<p>A short film based on the 1978 World Cup Final, in which Argentina won 3-1 agains the
-						Netherlands. This film was presented as my final project for my Spanish Film and Culture class.
-						<strong><a href="html/projects.html#mundial78">Click here to view this project ></a></strong>
-					</p>
-				</div>
+					<div class="carouselcard" data-index="0" data-status="active">
+						<div class="carouselmedia">
+							<iframe width="774" height="436"
+								src="https://www.youtube.com/embed/8s81-dnJeA4?rel=0&autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playlist=8s81-dnJeA4"
+								title="Connect-4" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+						</div>
 
-				<div class="textbox bottom right">
-					<h3>Biology Rap:</h3>
-					<p>An original rap about biology topics with images and videos coming from the Harvard Natural
-						History Museum. The lyrics and music video were composed and edited by me. <strong><a
-								href="html/projects.html#biorap">Click here to view this project ></a></strong></p>
+						<div class="carouseldescription">
+							<p><b>A two player version of Connect-4, coded in Python. The aim of the game is simple: to
+									get 4 pieces in a line. In this version of Connect-4, you type the column that you
+									want your piece to fall in, then watch as your piece magically
+									appears on the board! Once a player achieves the goal, the game
+									ends.</b></p>
+						</div>
+
+						<div class="carouseltitle">
+							<div class=projectheader>
+								<h2>Connect-4</h2>
+							</div>
+							<a class="projectbutton orangeshadow"
+								href="https://replit.com/@VALENTINSISKIND/Connect-4?v=1" target="_blank">
+								<i class="fa-solid fa-arrow-up-right-from-square"></i>
+							</a>
+						</div>
+
+						<div class="carouselarrows">
+							<button type="button" class="arrowbutton orangeshadow" onclick="handleLeftClick()"><i
+									class="fa-solid fa-arrow-left"></i> </button>
+							<button type="button" class="arrowbutton orangeshadow" onclick="handleRightClick()"><i
+									class="fa-solid fa-arrow-right"></i> </button>
+						</div>
+					</div>
+
+					<div class="carouselcard" data-index="1" data-status="inactive">
+						<div class="carouselmedia">
+							<iframe width="774" height="436"
+								src="https://www.youtube.com/embed/13tYCfjS_VY?rel=0&autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playlist=13tYCfjS_VY"
+								title="Hangman" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+						</div>
+
+						<div class="carouseldescription">
+							<p><b>A text based version of the classic game Hangman, coded in Python. To play hangman, a
+									random word is picked from a list of over 10,000, ranging from 3 to 10 letters long.
+									The player must guess 1 letter at a time, until they guess the word, or run out of
+									guesses.
+									After the game is over, the program asks the player if they want to play again, and
+									tells them their win percentage for that session.</b></p>
+						</div>
+
+						<div class="carouseltitle">
+							<div class="projectheader">
+								<h2>Hangman</h2>
+							</div>
+							<a class="projectbutton orangeshadow" href="https://replit.com/@VALENTINSISKIND/Hangman?v=1"
+								target="_blank">
+								<i class="fa-solid fa-arrow-up-right-from-square"></i>
+							</a>
+						</div>
+
+						<div class="carouselarrows">
+							<button type="button" class="arrowbutton orangeshadow" onclick="handleLeftClick()"><i
+									class="fa-solid fa-arrow-left"></i> </button>
+							<button type="button" class="arrowbutton orangeshadow" onclick="handleRightClick()"><i
+									class="fa-solid fa-arrow-right"></i> </button>
+						</div>
+					</div>
+
+					<div class="carouselcard" data-index="2" data-status="inactive">
+						<div class="carouselmedia">
+							<iframe width="774" height="436"
+								src="https://www.youtube.com/embed/s1X-XulXRog?rel=0&autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playlist=s1X-XulXRog"
+								title="Ebola Website" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+						</div>
+
+						<div class="carouseldescription">
+							<p><b>A website programmed in HTML, CSS, and JavaScript showcasing the timeline of the Ebola
+									Reston emergency in 1989. This website was based on <cite>The Hot Zone</cite> by
+									Richard Preston. The outbreak started in a monkey containment facility in Reston,
+									Virginia, but the virus never made it out into the public. Ebola is considered to be
+									one of the deadliest viruses in history. </b></p>
+						</div>
+
+						<div class="carouseltitle">
+							<div class="projectheader">
+								<h2>Ebola Website</h2>
+							</div>
+							<a class="projectbutton orangeshadow"
+								href="https://biology-book-project.valentinsiskind.repl.co/" target="_blank">
+								<i class="fa-solid fa-arrow-up-right-from-square"></i>
+							</a>
+						</div>
+
+						<div class="carouselarrows">
+							<button type="button" class="arrowbutton orangeshadow" onclick="handleLeftClick()"><i
+									class="fa-solid fa-arrow-left"></i> </button>
+							<button type="button" class="arrowbutton orangeshadow" onclick="handleRightClick()"><i
+									class="fa-solid fa-arrow-right"></i> </button>
+						</div>
+					</div>
+
+					<div class="carouselcard" data-index="3" data-status="inactive">
+						<div class="carouselmedia">
+							<iframe width="774" height="436"
+								src="https://www.youtube.com/embed/VbafRXr1Eeo?rel=0&modestbranding=1" title="Sawculus"
+								frameborder="0" allow="accelerometer;" allowfullscreen></iframe>
+						</div>
+
+						<div class="carouseldescription">
+							<p><b>This short film is a calculus parody of the movie <cite>Saw</cite>. Three calculus
+									students are trapped in a dank, dingy room. To escape, they must solve complex
+									calculus problems that test the limits of their knowledge. Will they be able to
+									escape? </b></p>
+						</div>
+
+						<div class="carouseltitle">
+							<div class="projectheader">
+								<h2>Sawculus Movie</h2>
+							</div>
+							<a class="projectbutton orangeshadow" href="https://www.youtube.com/watch?v=VbafRXr1Eeo"
+								target="_blank">
+								<i class="fa-solid fa-arrow-up-right-from-square"></i>
+							</a>
+						</div>
+
+						<div class="carouselarrows">
+							<button type="button" class="arrowbutton orangeshadow" onclick="handleLeftClick()"><i
+									class="fa-solid fa-arrow-left"></i> </button>
+							<button type="button" class="arrowbutton orangeshadow" onclick="handleRightClick()"><i
+									class="fa-solid fa-arrow-right"></i> </button>
+						</div>
+					</div>
+
+					<div class="carouselcard" data-index="4" data-status="inactive">
+						<div class="carouselmedia">
+							<iframe width="774" height="436"
+								src="https://www.youtube.com/embed/O1k8DUzGLCo?rel=0&modestbranding=1" title="Mundial78"
+								frameborder="0" allow="accelerometer;" allowfullscreen></iframe>
+						</div>
+
+						<div class="carouseldescription">
+							<p><b>This is a short film portraying the final of the 1978 World Cup Final between
+									Argentina and the Netherlands. At the end of the film, homage is payed to the
+									victims of the
+									Argentinian dictatorhsip that ruled over the country from 1976 to 1983, murdering
+									and disapearing over 30,000 people.</b></p>
+						</div>
+
+						<div class="carouseltitle">
+							<div class="projectheader">
+								<h2 id="wctitle">World Cup Short Film</h2>
+							</div>
+							<a class="projectbutton orangeshadow" href="https://www.youtube.com/watch?v=O1k8DUzGLCo"
+								target="_blank">
+								<i class="fa-solid fa-arrow-up-right-from-square"></i>
+							</a>
+						</div>
+
+						<div class="carouselarrows">
+							<button type="button" class="arrowbutton orangeshadow" onclick="handleLeftClick()"><i
+									class="fa-solid fa-arrow-left"></i> </button>
+							<button type="button" class="arrowbutton orangeshadow" onclick="handleRightClick()"><i
+									class="fa-solid fa-arrow-right"></i> </button>
+						</div>
+					</div>
+
+					<div class="carouselcard" data-index="5" data-status="inactive">
+						<div class="carouselmedia">
+							<iframe width="774" height="436"
+								src="https://www.youtube.com/embed/-TQ1TOEE-Fs?rel=0&modestbranding=1" title="Mundial78"
+								frameborder="0" allow="accelerometer;" allowfullscreen></iframe>
+						</div>
+
+						<div class="carouseldescription">
+							<p><b>This rap and music video were produced for biology class, and most of the images
+									used were taken from the Harvard Natural History museum. The video encompasses four
+									secions of the museums, namely evolution, arthropods, ocean life, and
+									mammals.</b></p>
+						</div>
+
+						<div class="carouseltitle">
+							<div class="projectheader">
+								<h2>Biology Rap</h2>
+							</div>
+							<a class="projectbutton orangeshadow" href="https://www.youtube.com/watch?v=-TQ1TOEE-Fs"
+								target="_blank">
+								<i class="fa-solid fa-arrow-up-right-from-square"></i>
+							</a>
+						</div>
+
+						<div class="carouselarrows">
+							<button type="button" class="arrowbutton orangeshadow" onclick="handleLeftClick()"><i
+									class="fa-solid fa-arrow-left"></i> </button>
+							<button type="button" class="arrowbutton orangeshadow" onclick="handleRightClick()"><i
+									class="fa-solid fa-arrow-right"></i> </button>
+						</div>
+					</div>
 				</div>
 			</section>
 
