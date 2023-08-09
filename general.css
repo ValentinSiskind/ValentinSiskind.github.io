@@ -273,9 +273,8 @@ button {
 	color: #FFFFF0;
 }
 
-#email .contacticon {
+#email .contacticon, #linkedin .contacticon {
 	padding: 0rem 0.85rem;
-	padding-top: 0.2rem;
 	margin-right: 0.5rem;
 }
 
